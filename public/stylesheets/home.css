@@ -1,0 +1,84 @@
+body {
+	font-family: sans-serif;
+}
+
+#box {
+	background: black;
+	height: 232px;
+	width: 735px;
+	left: 285px;
+	position: absolute;
+}
+
+#logo {
+	position: absolute;
+	width: 375px;
+	height: 175px;
+	left: 305px;
+	top: 25px;
+}
+
+#box-border {
+	height: 175px;
+	width: 675px;
+	position: absolute;
+	left: 305px;
+	top: 20px;
+	border: 10px double white;
+}
+
+#bowl-address {
+	color: white;
+	position: absolute;
+	text-align: center;
+	left: 590px;
+	top: 65px;
+	font-size: 20px;
+	width: 500px;
+}
+
+#search {
+	position: absolute;
+	left: 35px;
+	top: 110px;
+}
+
+#search-box {
+	position: absolute;
+	left: 320px;
+	top: 360px;
+	height: 40px;
+	width: 625px;
+	font-size: 20px;
+}
+
+#search-button {
+	position: absolute;
+	left: 951px;
+	top: 359px;
+	height: 42px;
+	width: 105px;
+	font-size: 20px;
+}
+
+#add-button {
+	position: absolute;
+	left: 450px;
+	top: 417px;
+	height: 42px;
+	width: 225px;
+	font-size: 20px;
+}
+
+#view-button {
+	position: absolute;
+	left: 681px;
+	top: 417px;
+	height: 42px;
+	width: 225px;
+	font-size: 20px;
+}
+
+#view-button {
+	position: absolute;
+}

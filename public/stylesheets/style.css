@@ -1,0 +1,528 @@
+#diagram {
+	height: 610px;
+	width: 550px;
+	left: 25px;
+	top: 200px;
+	position: absolute;
+}
+
+#frac1 {
+	left: 162px;
+	top: 312px;
+}
+
+.input {
+	position: absolute;
+	width: 50px;
+	text-align: center;
+}
+
+#frac2 {
+	left: 365px;
+	top: 312px;
+}
+
+#frac3 {
+	top: 339px;
+	left: 15px;
+}
+
+#frac4 {
+	left: 265px;
+	top: 312px;
+}
+
+#frac5 {
+	left: 518px;
+	top: 335px;
+}
+
+#frac6 {
+	left: 99px;
+	top: 430px;
+}
+
+#frac7 {
+	left: 424px;
+	top: 427px;
+}
+
+#oval1 {
+	left: 98px;
+	top: 447px;
+}
+
+.label {
+	position: absolute;
+	width: 80px;
+}
+
+#oval2 {
+	left: 424px;
+	top: 445px;
+}
+
+#cut1 {
+	left: 80px;
+	top: 486px;
+}
+
+#check1 {
+	left: 160px;
+	top: 502px;
+}
+
+#check2 {
+	left: 398px;
+	top: 502px;
+}
+
+.checkboxes {
+	position: absolute;
+}
+
+.check-margin {
+	margin-bottom: 25px;
+}
+
+#cut2 {
+	left: 433px;
+	top: 486px;
+}
+
+#full1 {
+	left: 85px;
+	top: 527px;
+}
+
+#full2 {
+	left: 433px;
+	top: 527px;
+}
+
+#frac8 {
+	left: 215px;
+	top: 499px;
+}
+
+#frac9 {
+	left: 312px;
+	top: 499px;
+}
+
+#deci1 {
+	left: 99px;
+	top: 602px;
+}
+
+#deci2 {
+	left: 425px;
+	top: 602px;
+}
+
+#text1 {
+	left: 151px;
+	top: 365px;
+}
+
+.free-text {
+	position: absolute;
+	width: 75px;
+	text-align: center;
+}
+
+#text2 {
+	left: 355px;
+	top: 365px;
+}
+
+#text3 {
+	left: 255px;
+	top: 714px;
+}
+
+.radio-buttons {
+	position: absolute;
+}
+
+#radio1 {
+	left: 100px;
+	top: 314px;
+}
+
+.button-margin-vert {
+	margin-bottom: 40px;
+}
+
+.button-margin-horiz {
+	margin-right: 33px;
+}
+
+#radio2 {
+	left: 152px;
+	top: 260px;
+}
+
+#radio3 {
+	left: 355px;
+	top: 260px;
+}
+
+#radio4 {
+	left: 466px;
+	top: 309px;
+}
+
+#radio5 {
+	left: 195px;
+	top: 662px;
+}
+
+#radio6 {
+	left: 256px;
+	top: 768px;
+}
+
+#left-side {
+	float: left;
+	width: 650px;
+	position: absolute;
+	left: 50px;
+}
+
+#right-side {
+	position: absolute;
+	left: 675px;
+	width: 650px;
+	top: 230px;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 15px;
+}
+
+.info {
+	margin-top: 22px;
+	margin-right: 22px;
+}
+
+#name {
+	width: 350px;
+}
+
+#date {
+	width: 136px;
+}
+
+#address {
+	width: 543px;
+}
+
+#city {
+	width: 265px;
+}
+
+#state {
+	width: 50px;
+}
+
+#zip {
+	width: 124px;
+}
+
+#phone {
+	width: 248px;
+}
+
+#cell {
+	width: 243px;
+}
+
+#email {
+	width: 561px;
+}
+
+#rh {
+	width: 105px;
+}
+
+#lh {
+	width: 105px;
+}
+
+#conv {
+	width: 90px;
+}
+
+#ft {
+	width: 90px;
+}
+
+#ball {
+	width: 265px;
+}
+
+#wgt {
+	width: 97px;
+}
+
+#pin {
+	width: 85px;
+}
+
+#layout {
+	width: 247px;
+}
+
+#surface {
+	width: 219px;
+}
+
+#bhpos {
+	width: 214px;
+}
+
+#size {
+	width: 95px;
+}
+
+#depth {
+	width: 67px;
+}
+
+#pap-horiz {
+	width: 116px;
+}
+
+#pap-updown {
+	width: 115px;
+}
+
+#pap-clt {
+	width: 277px;
+}
+
+#thumb {
+	width: 245px;
+}
+
+#fingers {
+	width: 220px;
+}
+
+#price {
+	width: 258px;
+}
+
+#completed-by {
+	width: 178px;
+}
+
+#clear {
+	clear: both;
+	position: relative;
+	left: 100px;
+}
+
+.chart {
+	border: 1px solid black;
+	position: absolute;
+	border-collapse: collapse;
+}
+
+.cell {
+	border: 1px solid black;
+	height: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.table-info {
+	position: relative;
+	top: 825px;
+}
+
+.table-data {
+	border: 0px solid;
+}
+
+#addition {
+	font-style: italic;
+}
+
+#notes {
+	width: 1125px;
+	height: 165px;
+	top: 1135px;
+	position: absolute;
+	font-family: sans-serif;
+	resize: none;
+}
+
+#back-top {
+	position: absolute;
+	left: 57px;
+	top: 145px;
+	height: 35px;
+	width: 90px;
+	font-size: 18px;
+}
+
+#submit-top {
+	position: absolute;
+	left: 1200px;
+	top: 145px;
+	height: 35px;
+	width: 90px;
+	font-size: 18px;
+}
+
+#submit-bottom {
+	position: absolute;
+	left: 1200px;
+	top: 1395px;
+	height: 35px;
+	width: 90px;
+	font-size: 18px;
+}
+
+#back-bottom {
+	position: absolute;
+	left: 57px;
+	top: 1395px;
+	height: 35px;
+	width: 90px;
+	font-size: 18px;
+}
+
+#header {
+	position: absolute;
+	top: 15px;
+}
+
+#box {
+	background: black;
+	height: 208px;
+	width: 1315px;
+	left: 10px;
+	position: absolute;
+}
+
+#logo {
+	position: absolute;
+	width: 370px;
+	height: 155px;
+	left: 465px;
+	top: 20px;
+}
+
+#box-border {
+	height: 152px;
+	width: 1265px;
+	position: absolute;
+	left: 25px;
+	top: 18px;
+	border: 10px double white;
+}
+
+#bowl-address {
+	color: white;
+	position: absolute;
+	text-align: center;
+	left: 590px;
+	top: 25px;
+	font-size: 20px;
+	width: 500px;
+}
+
+#footer {
+	position: absolute;
+	top: 1350px;
+}
+
+#box-bottom {
+	background: black;
+	height: 125px;
+	width: 1315px;
+	left: 10px;
+	position: absolute;
+}
+
+#box-border-bottom {
+	height: 70px;
+	width: 1265px;
+	position: absolute;
+	left: 25px;
+	top: 18px;
+	border: 10px double white;
+}
+
+#list {
+	position: absolute;
+	left: 125px;
+	top: 340px;
+	list-style-type: none;
+}
+
+.searched-field {
+	height: 50px;
+	width: 1000px;
+	font-size: 18px;
+	text-align: left;
+	padding-bottom: 20px;
+}
+
+.searched-name {
+	position: absolute;
+	left: 150px;
+}
+
+.searched-ball-type {
+	position: absolute;
+	left: 440px;
+}
+
+.searched-date {
+	position: absolute;
+	left: 775px;
+}
+
+#name-header {
+	position: absolute;
+	left: 275px;
+	top: 300px;
+	font-size: 24px;
+}
+
+#ball-header {
+	position: absolute;
+	left: 565px;
+	top: 300px;
+	font-size: 24px;
+}
+
+#date-header {
+	position: absolute;
+	left: 900px;
+	top: 300px;
+	font-size: 24px;
+}
+
+#search-box {
+	position: absolute;
+	left: 285px;
+	top: 245px;
+	height: 40px;
+	width: 625px;
+	font-size: 20px;
+}
+
+#search-button {
+	position: absolute;
+	left: 925px;
+	top: 245px;
+	height: 47px;
+	width: 105px;
+	font-size: 20px;
+}

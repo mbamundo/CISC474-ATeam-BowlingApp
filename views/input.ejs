@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bowling Ball Input</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+	<script src="/javascripts/angularApp.js"></script>
+</head>
+<body ng-app="seafordBowlingApp" ng-controller="MainCtrl">
+	<div id="container">
+		<div id="left-side">
+			<img id="diagram" src="/images/bowlingInput.png" alt="">
+			<form>
+				<input ng-model="frac1" class="input" id="frac1" type="text" name="frac1" placeholder="Fraction"><br> <!--<span id="frac1">{{customer.frac1}}</span>-->
+				<input ng-model="frac2" class="input" id="frac2" type="text" name="frac2" placeholder="Fraction"><br>
+				<input ng-model="frac3" class="input" id="frac3" type="text" name="frac3" placeholder="Fraction"><br>
+				<input ng-model="frac4" class="input" id="frac4" type="text" name="frac4" placeholder="Fraction"><br>
+				<input ng-model="frac5" class="input" id="frac5" type="text" name="frac5" placeholder="Fraction"><br>
+				<input ng-model="frac6" class="input" id="frac6" type="text" name="frac6" placeholder="Fraction"><br>
+				<input ng-model="frac7" class="input" id="frac7" type="text" name="frac7" placeholder="Fraction"><br>
+				<input ng-model="frac8" class="input" id="frac8" type="text" name="frac8" placeholder="Fraction"><br>
+				<input ng-model="frac9" class="input" id="frac9" type="text" name="frac9" placeholder="Fraction"><br>
+				<input ng-model="deci1" class="input" id="deci1" type="text" name="deci1" placeholder="Decimal"><br>
+				<input ng-model="deci2" class="input" id="deci2" type="text" name="deci2" placeholder="Decimal"><br>
+				<input ng-model="text1" class="free-text" id="text1" type="text" name="text1" placeholder="Free Text"><br>
+				<input ng-model="text2" class="free-text" id="text2" type="text" name="text2" placeholder="Free Text"><br>
+				<input ng-model="text3" class="free-text" id="text3" type="text" name="text3" placeholder="Free Text"><br>
+			</form> 
+			<p class="label" id="oval1">Oval Cut</P>
+			<p class="label" id="oval2">Oval Cut</p>
+			<form class="checkboxes" id="check1">
+				<input ng-model="cut1" class="check-margin" type="checkbox" name="cut1" value="Cut to Cut"><br>
+				<input ng-model="fspan1" type="checkbox" name="fspan1" value="Full Span">
+			</form> 
+			<form class="checkboxes" id="check2">
+				<input ng-model="cut2" class="check-margin" type="checkbox" name="cut2" value="Cut to Cut"><br>
+				<input ng-model="fspan2" type="checkbox" name="fspan2" value="Full Span">
+			</form>
+			<p class="label" id="cut1">Cut to Cut</p>
+			<p class="label" id="full1">Full Span</p>
+			<p class="label" id="cut2">Cut to Cut</p>
+			<p class="label" id="full2">Full Span</p>
+			<form class="radio-buttons" id="radio1">
+				<input ng-model="radio1" class="button-margin-vert" type="radio" name="arrow1" value="up"><br>
+				<input ng-model="radio1" type="radio" name="arrow1" value="down">
+			</form>
+			<form class="radio-buttons" id="radio2">
+				<input ng-model="radio2" class="button-margin-horiz" type="radio" name="arrow2" value="left">
+				<input ng-model="radio2" type="radio" name="arrow2" value="right">
+			</form>
+			<form class="radio-buttons" id="radio3">
+				<input ng-model="radio3" class="button-margin-horiz" type="radio" name="arrow3" value="left">
+				<input ng-model="radio3" type="radio" name="arrow3" value="right">
+			</form>
+			<form class="radio-buttons" id="radio4">
+				<input ng-model="radio4" class="button-margin-vert" type="radio" name="arrow4" value="up"><br>
+				<input ng-model="radio4" type="radio" name="arrow4" value="down">
+			</form>
+			<form class="radio-buttons" id="radio5">
+				<input ng-model="radio5" class="button-margin-vert" type="radio" name="arrow5" value="up"><br>
+				<input ng-model="radio5" type="radio" name="arrow5" value="down">
+			</form>
+			<form class="radio-buttons" id="radio6">
+				<input ng-model="radio6" class="button-margin-horiz" type="radio" name="arrow6" value="left">
+				<input ng-model="radio6" type="radio" name="arrow6" value="right">
+			</form>
+		</div>
+		<div id="right-side">
+			<form>
+				Name: <input  ng-model="name" class="info" id="name" type="text" name="name" placeholder="John Doe">
+				Date: <input ng-model="date" class="info" id="date" type="text" name="date" placeholder="mm/dd/yyyy"><br>
+				Address: <input ng-model="address" class="info" id="address" type="text" name="address" placeholder="123 Main St, Apt. 456"><br>
+				City: <input ng-model="city" class="info" id="city" type="text" name="city" placeholder="City">
+				State: <input ng-model="state" class="info" id="state" type="text" name="state" placeholder="ST">
+				Zip: <input ng-model="zip" class="info" id="zip" type="text" name="zip" placeholder="12345"><br>
+				Phone: <input ng-model="phone" class="info" id="phone" type="text" name="phone" placeholder="(xxx) xxx-xxxx">
+				Cell: <input ng-model="cell" class="info" id="cell" type="text" name="cell" placeholder="(xxx) xxx-xxxx"><br>
+				Email: <input ng-model="email" class="info" id="email" type="text" name="email" placeholder="johndoe@example.com"><br><br>
+				RH: <input ng-model="rh" class="info" id="rh" type="text" name="rh" placeholder="RH">
+				LH: <input ng-model="lh" class="info" id="lh" type="text" name="lh" placeholder="LH">
+				Conv: <input ng-model="conv" class="info" id="conv" type="text" name="conv" placeholder="Conv">
+				FT: <input ng-model="ft" class="info" id="ft" type="text" name="ft" placeholder="FT"><br>
+				Ball: <input ng-model="ball" class="info" id="ball" type="text" name="ball" placeholder="Ball">
+				Wgt: <input ng-model="wgt" class="info" id="wgt" type="text" name="wgt" placeholder="Wgt">
+				Pin: <input ng-model="pin" class="info" id="pin" type="text" name="pin" placeholder="Pin"><br>
+				Layout: <input ng-model="layout" class="info" id="layout" type="text" name="layout" placeholder="Layout">
+				Surface: <input ng-model="surface" class="info" id="surface" type="text" name="surface" placeholder="Surface"><br>
+				BH Position: <input ng-model="bhPosition" class="info" id="bhpos" type="text" name="bhpos" placeholder="BH Position">
+				Size: <input ng-model="size" class="info" id="size" type="text" name="size" placeholder="Size">
+				Depth: <input ng-model="depth" class="info" id="depth" type="text" name="depth" placeholder="Depth"><br><br>
+				PAP: <input ng-model="paph" class="info" id="pap-horiz" type="text" name="pap-horiz" placeholder="Horizontal">
+				<input ng-model="papv" class="info" id="pap-updown" type="text" name="pap-updown" placeholder="Up / Down">
+				<input ng-model="clt" class="info" id="pap-clt" type="text" name="pap-clt" placeholder="CLT / Offset Thumb"><br>
+				Thumb: <input ng-model="thumb" class="info" id="thumb" type="text" name="thumb" placeholder="Style">
+				Fingers: <input ng-model="fingers" class="info" id="fingers" type="text" name="fingers" placeholder="Style"><br>
+				Price: <input ng-model="price" class="info" id="price" type="text" name="price" placeholder="Price">
+				Completed by: <input ng-model="completedBy" class="info" id="completed-by" type="text" name="completed-by" placeholder="Completed by">
+			</form>
+		</div>
+		<div id="clear">
+			<p class="table-info" id="addition">Additional Equipment & Notes</p>
+			<form class="table-info">
+				<table class="chart">
+					<tr class="cell">
+						<td class="cell c1">Ball</td>
+						<td class="cell c2">Weight</td>
+						<td class="cell c3">Pin</td>
+						<td class="cell c4">Layout</td>
+						<td class="cell c5">BH Position</td>
+						<td class="cell c6">BH Size</td>
+						<td class="cell c7">BH Depth</td>
+						<td class="cell c8">Surface</td>
+					</tr>
+					<tr class="cell">
+						<td class="cell c1"><input ng-model="ball1" class="table-data c1" type="text" name="ball1"></td>
+						<td class="cell c2"><input ng-model="weight1" class="table-data c2" type="text" name="weight1"></td>
+						<td class="cell" id="pin1"><input ng-model="pin1" class="table-data" id="pin1" type="text" name="pin1"></td>
+						<td class="cell" id="layout1"><input ng-model="layout1" class="table-data" id="layout1" type="text" name="layout1"></td>
+						<td class="cell" id="bhpos1"><input ng-model="bhpos1" class="table-data" id="bhpos1" type="text" name="bhpos1"></td>
+						<td class="cell" id="bhsize1"><input ng-model="bhsize1" class="table-data" id="bhsize1" type="text" name="bhsize1"></td>
+						<td class="cell" id="bhdepth1"><input ng-model="bhdepth1" class="table-data" id="bhdepth1" type="text" name="bhdepth1"></td>
+						<td class="cell" id="surface1"><input ng-model="surface1" class="table-data" id="surface1" type="text" name="surface1"><br></td>
+				</tr>
+				<tr class="cell">
+						<td class="cell"><input ng-model="ball2" class="table-data" id="ball2" type="text" name="ball2"></td>
+						<td class="cell"><input ng-model="weight2" class="table-data" id="weight2" type="text" name="weight2"></td>
+						<td class="cell"><input ng-model="pin2" class="table-data" id="pin2" type="text" name="pin2"></td>
+						<td class="cell"><input ng-model="layout2" class="table-data" id="layout2" type="text" name="layout2"></td>
+						<td class="cell"><input ng-model="bhpos2" class="table-data" id="bhpos2" type="text" name="bhpos2"></td>
+						<td class="cell"><input ng-model="bhsize2" class="table-data" id="bhsize2" type="text" name="bhsize2"></td>
+						<td class="cell"><input ng-model="bhdepth2" class="table-data" id="bhdepth2" type="text" name="bhdepth2"></td>
+						<td class="cell"><input ng-model="surface2" class="table-data" id="surface2" type="text" name="surface2"><br></td>
+				</tr>
+				<tr class="cell">
+						<td class="cell"><input ng-model="ball3" class="table-data" id="ball3" type="text" name="ball3"></td>
+						<td class="cell"><input ng-model="weight3" class="table-data" id="weight3" type="text" name="weight3"></td>
+						<td class="cell"><input ng-model="pin3" class="table-data" id="pin3" type="text" name="pin3"></td>
+						<td class="cell"><input ng-model="layout3" class="table-data" id="layout3" type="text" name="layout3"></td>
+						<td class="cell"><input ng-model="bhpos3" class="table-data" id="bhpos3" type="text" name="bhpos3"></td>
+						<td class="cell"><input ng-model="bhsize3" class="table-data" id="bhsize3" type="text" name="bhsize3"></td>
+						<td class="cell"><input ng-model="bhdepth3" class="table-data" id="bhdepth3" type="text" name="bhdepth3"></td>
+						<td class="cell"><input ng-model="surface3" class="table-data" id="surface3" type="text" name="surface3"><br></td>
+				</tr>
+				<tr class="cell">
+						<td class="cell"><input ng-model="ball4" class="table-data" id="ball4" type="text" name="ball4"></td>
+						<td class="cell"><input ng-model="weight4" class="table-data" id="weight4" type="text" name="weight4"></td>
+						<td class="cell"><input ng-model="pin4" class="table-data" id="pin4" type="text" name="pin4"></td>
+						<td class="cell"><input ng-model="layout4" class="table-data" id="layout4" type="text" name="layout4"></td>
+						<td class="cell"><input ng-model="bhpos4" class="table-data" id="bhpos4" type="text" name="bhpos4"></td>
+						<td class="cell"><input ng-model="bhsize4" class="table-data" id="bhsize4" type="text" name="bhsize4"></td>
+						<td class="cell"><input ng-model="bhdepth4" class="table-data" id="bhdepth4" type="text" name="bhdepth4"></td>
+						<td class="cell"><input ng-model="surface4" class="table-data" id="surface4" type="text" name="surface4"><br></td>
+				</tr>
+				<tr class="cell">
+						<td class="cell"><input ng-model="ball5" class="table-data" id="ball5" type="text" name="ball5"></td>
+						<td class="cell"><input ng-model="weight5" class="table-data" id="weight5" type="text" name="weight5"></td>
+						<td class="cell"><input ng-model="pin5" class="table-data" id="pin5" type="text" name="pin5"></td>
+						<td class="cell"><input ng-model="layout5" class="table-data" id="layout5" type="text" name="layout5"></td>
+						<td class="cell"><input ng-model="bhpos5" class="table-data" id="bhpos5" type="text" name="bhpos5"></td>
+						<td class="cell"><input ng-model="bhsize5" class="table-data" id="bhsize5" type="text" name="bhsize5"></td>
+						<td class="cell"><input ng-model="bhdepth5" class="table-data" id="bhdepth5" type="text" name="bhdepth5"></td>
+						<td class="cell"><input ng-model="surface5" class="table-data" id="surface5" type="text" name="surface5"><br></td>
+				</tr>
+				<tr class="cell">
+						<td class="cell"><input ng-model="ball6" class="table-data" id="ball6" type="text" name="ball6"></td>
+						<td class="cell"><input ng-model="weight6" class="table-data" id="weight6" type="text" name="weight6"></td>
+						<td class="cell"><input ng-model="pin6" class="table-data" id="pin6" type="text" name="pin6"></td>
+						<td class="cell"><input ng-model="layout6" class="table-data" id="layout6" type="text" name="layout6"></td>
+						<td class="cell"><input ng-model="bhpos6" class="table-data" id="bhpos6" type="text" name="bhpos6"></td>
+						<td class="cell"><input ng-model="bhsize6" class="table-data" id="bhsize6" type="text" name="bhsize6"></td>
+						<td class="cell"><input ng-model="bhdepth6" class="table-data" id="bhdepth6" type="text" name="bhdepth6"></td>
+						<td class="cell"><input ng-model="surface6" class="table-data" id="surface6" type="text" name="surface6"><br></td>
+				</tr>
+				<tr class="cell">
+						<td class="cell"><input ng-model="ball7" class="table-data" id="ball7" type="text" name="ball7"></td>
+						<td class="cell"><input ng-model="weight7" class="table-data" id="weight7" type="text" name="weight7"></td>
+						<td class="cell"><input ng-model="pin7" class="table-data" id="pin7" type="text" name="pin7"></td>
+						<td class="cell"><input ng-model="layout7" class="table-data" id="layout7" type="text" name="layout7"></td>
+						<td class="cell"><input ng-model="bhpos7" class="table-data" id="bhpos7" type="text" name="bhpos7"></td>
+						<td class="cell"><input ng-model="bhsize7" class="table-data" id="bhsize7" type="text" name="bhsize7"></td>
+						<td class="cell"><input ng-model="bhdepth7" class="table-data" id="bhdepth7" type="text" name="bhdepth7"></td>
+						<td class="cell"><input ng-model="surface7" class="table-data" id="surface7" type="text" name="surface7"><br></td>
+				</tr>
+				<tr class="cell">
+						<td class="cell"><input ng-model="ball8" class="table-data" id="ball8" type="text" name="ball8"></td>
+						<td class="cell"><input ng-model="weight8" class="table-data" id="weight8" type="text" name="weight8"></td>
+						<td class="cell"><input ng-model="pin8" class="table-data" id="pin8" type="text" name="pin8"></td>
+						<td class="cell"><input ng-model="layout8" class="table-data" id="layout8" type="text" name="layout8"></td>
+						<td class="cell"><input ng-model="bhpos8" class="table-data" id="bhpos8" type="text" name="bhpos8"></td>
+						<td class="cell"><input ng-model="bhsize8" class="table-data" id="bhsize8" type="text" name="bhsize8"></td>
+						<td class="cell"><input ng-model="bhdepth8" class="table-data" id="bhdepth8" type="text" name="bhdepth8"></td>
+						<td class="cell"><input ng-model="surface8" class="table-data" id="surface8" type="text" name="surface8"><br></td>
+				</tr>
+				<tr class="cell">
+						<td class="cell"><input ng-model="ball9" class="table-data" id="ball9" type="text" name="ball9"></td>
+						<td class="cell"><input ng-model="weight9" class="table-data" id="weight9" type="text" name="weight9"></td>
+						<td class="cell"><input ng-model="pin9" class="table-data" id="pin9" type="text" name="pin9"></td>
+						<td class="cell"><input ng-model="layout9" class="table-data" id="layout9" type="text" name="layout9"></td>
+						<td class="cell"><input ng-model="bhpos9" class="table-data" id="bhpos9" type="text" name="bhpos9"></td>
+						<td class="cell"><input ng-model="bhsize9" class="table-data" id="bhsize9" type="text" name="bhsize9"></td>
+						<td class="cell"><input ng-model="bhdepth9" class="table-data" id="bhdepth9" type="text" name="bhdepth9"></td>
+						<td class="cell"><input ng-model="surface9" class="table-data" id="surface9" type="text" name="surface9"><br></td>
+				</tr>
+				<tr class="cell">
+						<td class="cell"><input ng-model="ball10" class="table-data" id="ball10" type="text" name="ball10"></td>
+						<td class="cell"><input ng-model="weight10" class="table-data" id="weight10" type="text" name="weight10"></td>
+						<td class="cell"><input ng-model="pin10" class="table-data" id="pin10" type="text" name="pin10"></td>
+						<td class="cell"><input ng-model="layout10" class="table-data" id="layout10" type="text" name="layout10"></td>
+						<td class="cell"><input ng-model="bhpos10" class="table-data" id="bhpos10" type="text" name="bhpos10"></td>
+						<td class="cell"><input ng-model="bhsize10" class="table-data" id="bhsize10" type="text" name="bhsize10"></td>
+						<td class="cell"><input ng-model="bhdepth10" class="table-data" id="bhdepth10" type="text" name="bhdepth10"></td>
+						<td class="cell"><input ng-model="bhdepth10" class="table-data" id="surface10" type="text" name="surface10"><br></td>
+				</tr>
+				</table>
+			</form>
+			<textarea ng-model="notes" id="notes" name="notes" placeholder="Notes"></textarea>
+		</div>
+	</div>
+	<div id="header">
+		<div id="box">
+		</div>
+		<img id="logo" src="/images/logo.png" alt="">
+		<div id="box-border">
+		</div>
+	</div>
+	<a href="home"><button id="back-top" type="button">Back</button></a>
+	<button ng-click="addCustomer()" id="submit-top" type="button">Submit</button>
+	<div id="footer">
+		<div id="box-bottom">
+		</div> 
+		<div id="box-border-bottom">
+		</div>
+	</div>
+	<button ng-click="addCustomer()" id="submit-bottom" type="button">Submit</button>
+	<a href="home"><button id="back-bottom" type="button">Back</button></a>
+</body>
+</html>
